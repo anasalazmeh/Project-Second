@@ -205,6 +205,10 @@ header .container .icon{
     header .container .icon a{
         color: white;
     }
+    header .container img{
+        width: 150px;
+     
+    }
 } 
 @media (max-width:343px){
     header .container img{
@@ -391,6 +395,9 @@ header .container .icon{
     .sections .container .text{
         width: 90%;
     }
+    .sections .container hr{
+        width: 50%;
+    }
 }
 /* <!-- end SERVICES --> */
 /* <!-- start sections-services  --> */
@@ -528,20 +535,34 @@ header .container .icon{
     margin-top: 50px;
     margin-bottom: 50px;
 }
-.last .container{
-    display: flex;
-    justify-content: center;
+.last .container .bottons{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
 }
-.last .container .bottons span{
-    margin: 0 10px;
-    padding: 5px 20px;
-    transition: 0.5s;
-
+.last .container .bottons{
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    grid-template-columns: repeat(auto-fill,minmax(90px,1fr));
+    grid-gap: 30px 30px;
 }
-.last .container .bottons span.active,
-.last .container .bottons span:hover{
+.last .container .bottons .pho{
+    /* width: 120px; */
+}
+.last .container .bottons div{
+    text-align: center;
+}
+.last .container .bottons div.active,
+.last .container .bottons div:hover{
     color: white;
     background-color: #06a6d0;
+}
+@media (max-width:766px){
+    .last .container .bottons{
+        width: 80%;
+        grid-template-columns: repeat(auto-fill,minmax(60px,1fr));
+    }
 }
 /* end last */
 /* <!-- start sections PORTFOLIO  --> */
@@ -1067,6 +1088,12 @@ background-color: #06a6d0;
         align-items: center;
         
     }
+    .PRICING-finish .text .subscribe{
+        width: 90%;
+    }
+    .PRICING-finish .text .text-p{
+        width: 80%;
+    }
 }
 /* end pricing finish */
 /* Start sections-CONTACT */
@@ -1077,7 +1104,6 @@ background-color: #06a6d0;
 .sections-CONTACT .container .forms{
     display: flex;
     flex-direction: column;
-    
 }
 .sections-CONTACT .container .forms input{
     width: 100%;
@@ -1103,11 +1129,17 @@ background-color: #06a6d0;
 .sections-CONTACT .container .text{
     display: flex;
     flex-direction: column;
-    align-content: center;
+    align-content: space-between;
     justify-content: space-between;
+    
 }
 .sections-CONTACT .container .text .item-owe{
     height: 60%;
+    margin: 10px;
+}
+.sections-CONTACT .container .text .item{
+    height: 60%;
+    margin: 10px;
 }
 .sections-CONTACT .buttons{
     display: flex;
@@ -1141,6 +1173,7 @@ background-color: #06a6d0;
     display: flex;
     justify-content: center;
     align-items: end;
+    align-content: end;
     text-align: center;
     position: relative;
     height: 300px;
