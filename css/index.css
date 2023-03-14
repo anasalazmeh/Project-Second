@@ -547,9 +547,9 @@ header .container .icon{
     grid-template-columns: repeat(auto-fill,minmax(90px,1fr));
     grid-gap: 30px 30px;
 }
-.last .container .bottons .pho{
-    /* width: 120px; */
-}
+/* .last .container .bottons .pho{
+    /* width: 120px; 
+} */
 .last .container .bottons div{
     text-align: center;
 }
@@ -1176,7 +1176,7 @@ background-color: #06a6d0;
     align-content: end;
     text-align: center;
     position: relative;
-    height: 300px;
+    height: 200px;
     color: white;
 }
 .footer img.background{
@@ -1190,4 +1190,5 @@ background-color: #06a6d0;
 .footer span{
     color: #06a6d0;
 }
+
 /* end footer */
